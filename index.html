@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15211e">
+  <meta name="description" content="Ajantala — an illustrated West African folktale about courage, wit, and belonging.">
+  <title>Ajantala — The Little One Who Saw Everything</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Ajantala home"><span class="brand-mark">A</span><span>AJANTALA</span></a>
+    <nav class="main-nav" aria-label="Primary navigation"><a href="#story">The story</a><a href="#chapters">Chapters</a><a href="#about">About</a></nav>
+    <a class="header-cta" href="#chapters">Explore the tale <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow"><span class="eyebrow-dot"></span> An illustrated folktale</p><h1 id="hero-title">The little one<br><em>who saw everything.</em></h1><p class="hero-lede">When a child is carried into the forest and the animals need a leader, the smallest voice can change the whole story.</p><div class="hero-actions"><a class="button button-primary" href="#story">Begin the story <span>→</span></a><a class="text-link" href="#chapters">Browse chapters</a></div><div class="hero-meta"><span><strong>17</strong> chapters</span><i></i><span><strong>83</strong> story moments</span><i></i><span>For every curious mind</span></div></div><div class="hero-art" aria-label="Ajantala story artwork"><div class="sun-disc"></div><div class="leaf leaf-one"></div><div class="leaf leaf-two"></div><img src="public/assets/A15-S01_Cheetah_Horse_and_Tortoise.png" alt="Animals gathered around Ajantala in the forest" fetchpriority="high"><span class="art-caption">The forest remembers<br>every brave beginning.</span></div></section>
+    <section class="story-intro" id="story" aria-labelledby="story-title"><div><p class="eyebrow">01 / Once upon a time</p><h2 id="story-title">A story carried<br><em>by many voices.</em></h2></div><div class="intro-copy"><p>In a village at the edge of a great forest, a baby named Ajantala is born with a gift no one understands: he notices everything.</p><p>Follow the trail from his grandfather’s fireside tale to the animals’ most daring escape. Every frame is a piece of the approved Ajantala artwork.</p><a class="arrow-link" href="#chapters">Read the chapters <span>↘</span></a></div></section>
+    <section class="chapter-section" id="chapters" aria-labelledby="chapters-title"><div class="section-heading"><div><p class="eyebrow">02 / The journey</p><h2 id="chapters-title">Step into<br><em>the forest.</em></h2></div><p class="section-note">Choose a chapter to open its story moments. Start at the beginning, or follow the animals to the secret plan.</p></div><div class="chapter-toolbar"><div class="filters" role="group" aria-label="Filter chapters"><button class="filter is-active" data-filter="all">All chapters</button><button class="filter" data-filter="ajantala">Ajantala’s path</button><button class="filter" data-filter="animals">Animal friends</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="chapter-search" type="search" placeholder="Find a chapter" aria-label="Find a chapter"></label></div><div class="chapter-grid" id="chapter-grid"></div></section>
+    <section class="quote-section"><div class="quote-mark">“</div><blockquote>Even the smallest among us can carry a story big enough for everyone.</blockquote><p>— The wisdom of the forest</p></section>
+    <section class="about-section" id="about" aria-labelledby="about-title"><div class="about-image"><img src="public/assets/A01-S01_Grandpa_Opens_the_Tale.png" alt="Grandfather begins the Ajantala tale" loading="lazy"><span>Every tale begins<br>with someone listening.</span></div><div class="about-copy"><p class="eyebrow">03 / About Ajantala</p><h2 id="about-title">Made to be<br><em>read together.</em></h2><p>Ajantala is a visual folktale shaped by family, friendship, and the courage to see what others miss. This first local edition is a quiet place to wander through the story, one panel at a time.</p><p class="small-note">Version 1 · Local preview · Artwork supplied by Captain / Number One</p></div></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">A</span><span>AJANTALA</span></a><p>A story for every generation.</p><span class="footer-note">Local preview · V1</span></footer>
+  <dialog id="chapter-dialog" aria-labelledby="dialog-title"><div class="reader-head"><div><p class="eyebrow" id="dialog-kicker"></p><h2 id="dialog-title"></h2></div><button class="icon-button" id="close-reader" aria-label="Close chapter reader">×</button></div><div class="reader-stage"><button class="reader-arrow" id="prev-shot" aria-label="Previous story moment">←</button><figure><img id="reader-image" src="" alt=""><figcaption id="reader-caption"></figcaption></figure><button class="reader-arrow" id="next-shot" aria-label="Next story moment">→</button></div><div class="reader-progress"><span id="reader-count"></span><div class="progress-track"><span id="reader-progress-fill"></span></div><span class="reader-hint">Use ← → to explore</span></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
